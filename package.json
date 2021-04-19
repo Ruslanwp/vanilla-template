@@ -10,7 +10,8 @@
     "start": "parcel serve ./src/index.html --open",
     "lint-js": "eslint ./src",
     "lint-js:fix": "eslint ./src --fix",
-    "lint-styles": "stylelint --fix **/*.css",
+    "lint-styles": "stylelint **/*.css",
+    "lint-styles:fix": "stylelint --fix **/*.css",
     "lint": "concurrently \"npm:lint-js\" \"npm:lint-styles\"",
     "lint:fix": "concurrently \"npm:lint-js:fix\" \"npm:lint-styles:fix\""
   },
